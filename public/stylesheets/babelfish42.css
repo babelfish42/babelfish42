@@ -2,11 +2,11 @@
 /* Global styles */
  
 #store #notice {
-        color: #FFFFFF;
+        color: #000000;
         border: 2px solid red;
         padding: 1em;
         margin-bottom: 2em;
-        background-color: #FF0099;
+        background-color: #00CCFF; /*hintergrundfarbe bei benachrichtigungen*/
         font: bold smaller sans-serif;
 }
  
@@ -59,7 +59,7 @@
 }
  
 #product_list .list_line_even {
-  background:   #FF99FF;
+  background:   #66CCFF;
 }
  
 #product_list .list_line_odd {
@@ -71,7 +71,7 @@
  
  /* banner oben*/
 #banner {
-  background: #FFCCFF;
+  background: #0099FF;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid;
@@ -86,7 +86,7 @@
 
 /*linke spalte*/ 
 #columns {
-  background: #FF99FF;
+  background: #0099FF;
 }
  
 #main {
@@ -103,11 +103,11 @@
   padding-left: 1em;
   padding-bottom: 1em;
   width: 16em;
-  background: #FF99FF;
+  background: #00CCFF;
 }
  
 #side a {
-  color: #000000;
+  color: #000066;
   font-size: small;
 }
 /* END:mainlayout */
@@ -230,3 +230,10 @@
   margin: 0.5em 0;
 }
 /* END:form */
+
+/* START:i18n */
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
+}
+/* END:i18n */

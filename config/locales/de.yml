@@ -1,0 +1,95 @@
+
+#START:layout
+#START:main
+#START:cart
+#START:currency
+#START:checkout
+#START:errors
+#START:model
+#START:flash
+de:
+ 
+#END:cart
+#END:flash
+#END:model
+#END:errors
+#END:checkout
+#END:main
+#END:layout
+  number:
+    currency:
+      format:
+        unit:      "CHF"
+        precision: 2
+        separator: ","
+        delimiter: ""
+        format:    "%n%u"
+#END:currency
+ 
+#START:model
+#START:errors
+  activerecord:
+#END:errors
+    models:
+      order:       "Bestellung"
+    attributes:
+      order:
+        address:   "Adresse"
+        name:      "Name"
+        email:     "E-mail"
+        pay_type:  "Zahlungsart"
+#END:model
+#START:errors
+    errors:
+      messages:
+        inclusion: "bla"
+        blank:     "bla"
+  errors:
+    template:
+      body:        "bla:"
+      header:
+        one:       "bla"
+        other:     "bla"
+#END:errors
+ 
+#START:layout
+  layouts:
+    application:
+      title:       "Babelfish42"
+      home:        "Home"
+      questions:   "Fragen"
+      news:        "News"
+      contact:     "Kontakt"
+#END:layout
+ 
+#START:cart
+  carts:
+    cart:
+      title:       "Ihr Warenkorb"
+      empty:       "Warenkorb leeren"
+      checkout:    "zur Kasse"
+#END:cart
+ 
+#START:main
+  store:
+    index:
+      title_html:  "Ihr Babelfish42 Katalog"
+      add_html:    "Warenkorb"
+#END:main
+ 
+#START:checkout
+  orders:
+    new:
+      legend:       "Bitte Rechnungs-/Versandanschrift ausfuellen"
+    form:
+      name:         "Name"
+      address_html: "Adresse"
+      email:        "E-mail"
+      pay_type:     "Zahlungsart"
+      pay_prompt_html: "Zahlungsart auswaehlen"
+      submit:       "Absenden"
+#END:checkout
+ 
+#START:flash
+  thanks:          "Vielen Dank fuer Ihre Bestellung"
+#END:flash
