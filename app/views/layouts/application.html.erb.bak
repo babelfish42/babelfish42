@@ -12,7 +12,7 @@
 <body id="store"> 
   <div id="banner"> 
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Babelfish42" %>
+    <%= @page_title || "Pragmatic Bookshelf" %>
   </div> 
   <div id="columns"> 
     <div id="side"> 
