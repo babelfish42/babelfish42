@@ -83,10 +83,11 @@ de:
       legend:       "Bitte Rechnungs-/Versandanschrift ausfuellen"
     form:
       name:         "Name"
-      address_html: "Adresse"
+      address_html: "adresse"
       email:        "E-mail"
       pay_type:     "Zahlungsart"
       pay_prompt_html: "Zahlungsart auswaehlen"
+      title_prompt_html: "Anrede"
       submit:       "Absenden"
 #END:checkout
  

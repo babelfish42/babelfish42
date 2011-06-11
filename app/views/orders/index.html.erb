@@ -2,8 +2,13 @@
 
 <table>
   <tr>
+  	<th>Title</th>
     <th>Name</th>
-    <th>Addresse</th>
+    <th>Firstname</th>
+    <th>Address</th>
+    <th>Hno</th>
+    <th>Zip</th>
+    <th>City</th>
     <th>Email</th>
     <th>Zahlungsart</th>
     <th></th>
@@ -13,8 +18,13 @@
 
 <% @orders.each do |order| %>
   <tr>
+  	<td><%= order.title_type %></td>
     <td><%= order.name %></td>
+    <td><%= order.firstname %></td>
     <td><%= order.address %></td>
+    <td><%= order.hno %></td>
+    <td><%= order.zip %></td>
+    <td><%= order.city %></td>
     <td><%= order.email %></td>
     <td><%= order.pay_type %></td>
     <td><%= link_to 'Show', order %></td>

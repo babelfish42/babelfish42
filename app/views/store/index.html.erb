@@ -3,9 +3,7 @@
 <p id="notice"><%= notice %></p> 
 <% end %>
  
-<!-- START_HIGHLIGHT --> 
 <h1><%= t('.title_html') %></h1> 
-<!-- END_HIGHLIGHT --> 
  
 <% @products.each do |product| %>
   <div class="entry"> 
@@ -14,9 +12,7 @@
     <%= sanitize(product.description) %>
     <div class="price_line"> 
       <span class="price"><%= number_to_currency(product.price) %></span> 
-<!-- START_HIGHLIGHT --> 
       <%= button_to t('.add_html'), line_items_path(:product_id => product),
-# END_HIGHLIGHT
         :remote => true %>
     </div> 
   </div> 

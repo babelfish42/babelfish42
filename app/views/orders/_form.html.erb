@@ -1,50 +1,57 @@
-
-<!-- START:explanation --> 
 <%= form_for(@order) do |f| %>
   <% if @order.errors.any? %>
     <div id="error_explanation"> 
-<!-- START_HIGHLIGHT --> 
       <h2><%= t('errors.template.header', :count=>@order.errors.size,
         :model=>t('activerecord.models.order')) %>.</h2> 
       <p><%= t('errors.template.body') %></p> 
-<!-- END_HIGHLIGHT --> 
  
       <ul> 
       <% @order.errors.full_messages.each do |msg| %>
-<!-- START:raw --> 
         <li><%= raw msg %></li> 
-<!-- END:raw --> 
       <% end %>
       </ul> 
     </div> 
   <% end %>
-<!-- ... --> 
-<!-- END:explanation --> 
- 
-  <div class="field"> 
-    <%= f.label :name %><br /> 
-    <%= f.text_field :name, :size => 40 %>
-  </div> 
-  <div class="field"> 
-<!-- START_HIGHLIGHT --> 
-    <%= f.label :address, t('.address_html') %><br /> 
-<!-- END_HIGHLIGHT --> 
-    <%= f.text_area :address, :rows => 3, :cols => 40 %>
-  </div> 
-  <div class="field"> 
-    <%= f.label :email %><br /> 
-    <%= f.email_field :email, :size => 40 %>
-  </div> 
-  <div class="field"> 
-    <%= f.label :pay_type %><br /> 
-    <%= f.select :pay_type, Order::PAYMENT_TYPES,
-#START_HIGHLIGHT
-                  :prompt => t('.pay_prompt_html') %>
-<!-- END_HIGHLIGHT --> 
-  </div> 
+	
+	<form>
+	<table border="0" cellpadding="3" cellspacing="0">
+  <tr>
+  	<td><%= f.label :title_type %> </td>
+    <td><%= f.select :title_type, Order::TITLE, :prompt => t('.title_prompt_html') %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :name %></td>
+    <td><%= f.text_field :name, :size => 40 %></td>
+  </tr>
+  <tr>  
+    <td><%= f.label :firstname %> </td>
+    <td><%= f.text_field :firstname, :size => 40 %></td>
+   </tr>
+
+  <tr>
+    <td><%= f.label :address %></td>
+    <td><%= f.text_field :address, :size => 40 %></td>
+    <td><%= f.label :hno %></td>
+    <td><%= f.text_field :hno, :size => 4 %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :zip %> </td>
+    <td><%= f.text_field :zip, :size => 4 %></td>
+    <td><%= f.label :city %> </td>
+    <td><%= f.text_field :city, :size => 40 %></td>
+  </tr> 
+  <tr>
+    <td><%= f.label :email %></td>
+    <td><%= f.email_field :email, :size => 40 %></td>
+  </tr> 
+  <tr>
+    <td><%= f.label :pay_type %></td>
+    <td><%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => t('.pay_prompt_html') %></td>
+  </tr> 
+
   <div class="actions"> 
-<!-- START_HIGHLIGHT --> 
     <%= f.submit t('.submit') %>
-<!-- END_HIGHLIGHT --> 
   </div> 
+    </table>
+  </form>
 <% end %>
