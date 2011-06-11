@@ -7,7 +7,7 @@
 #START:errors
 #START:model
 #START:flash
-de:
+it:
  
 #END:cart
 #END:flash
@@ -31,13 +31,13 @@ de:
   activerecord:
 #END:errors
     models:
-      order:       "Bestellung"
+      order:       "Ordinare"
     attributes:
       order:
-        address:   "Adresse"
-        name:      "Name"
+        address:   "Indirizzo"
+        name:      "Nome"
         email:     "E-mail"
-        pay_type:  "Zahlungsart"
+        pay_type:  "Modalita di pagamento"
 #END:model
 #START:errors
     errors:
@@ -57,39 +57,39 @@ de:
     application:
       title:       "Babelfish42 Online Shop"
       home:        "Home"
-      questions:   "Fragen"
-      news:        "News"
-      contact:     "Kontakt"
+      questions:   "Quesito"
+      news:        "Novita"
+      contact:     "Per contattarci"
 #END:layout
  
 #START:cart
   carts:
     cart:
-      title:       "Ihr Warenkorb"
-      empty:       "Warenkorb leeren"
-      checkout:    "zur Kasse"
+      title:       "carello d'accquisti"
+      empty:       "cancellare"
+      checkout:    "ordinare"
 #END:cart
  
 #START:main
   store:
     index:
-      title_html:  "Ihr Babelfish42 Katalog"
-      add_html:    "Warenkorb"
+      title_html:  "Voi Babelfish42 Catalogo"
+      add_html:    "carello d'accquisti"
 #END:main
  
 #START:checkout
   orders:
     new:
-      legend:       "Bitte Rechnungs-/Versandanschrift ausfuellen"
+      legend:       "Compilare indirizzo per favore"
     form:
-      name:         "Name"
-      address_html: "Adresse"
+      name:         "Nome"
+      address_html: "Indirizzo"
       email:        "E-mail"
-      pay_type:     "Zahlungsart"
-      pay_prompt_html: "Zahlungsart auswaehlen"
-      submit:       "Absenden"
+      pay_type:     "Modalita di pagamento"
+      pay_prompt_html: "scremare Modalita di pagamento"
+      submit:       "Mandare"
 #END:checkout
  
 #START:flash
-  thanks:          "Vielen Dank fuer Ihre Bestellung"
+  thanks:          "Grazie mille per ordinare"
 #END:flash

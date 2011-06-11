@@ -1,6 +1,0 @@
-<div class="babelfish42_form"> 
-  <fieldset> 
-    <legend>Bitte Versandschrift angeben</legend> 
-    <%= render 'form' %>
-  </fieldset> 
-</div> 

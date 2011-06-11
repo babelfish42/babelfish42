@@ -25,7 +25,7 @@ en:
 #START:layout
   layouts:
     application:
-      title:       "Pragmatic Bookshelf"
+      title:       "Babelfish42 Online Shop"
       home:        "Home"
       questions:   "Questions"
       news:        "News"
@@ -43,7 +43,7 @@ en:
 #START:main
   store:
     index:
-      title_html:  "Your Pragmatic Catalog"
+      title_html:  "Your Babelfish42 Catalog"
       add_html:    "Add to Cart"
 #END:main
  

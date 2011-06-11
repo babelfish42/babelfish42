@@ -7,7 +7,7 @@
 #START:errors
 #START:model
 #START:flash
-de:
+fr:
  
 #END:cart
 #END:flash
@@ -31,13 +31,13 @@ de:
   activerecord:
 #END:errors
     models:
-      order:       "Bestellung"
+      order:       "commande"
     attributes:
       order:
         address:   "Adresse"
-        name:      "Name"
+        name:      "Nom"
         email:     "E-mail"
-        pay_type:  "Zahlungsart"
+        pay_type:  "Mode de paiment"
 #END:model
 #START:errors
     errors:
@@ -57,39 +57,39 @@ de:
     application:
       title:       "Babelfish42 Online Shop"
       home:        "Home"
-      questions:   "Fragen"
-      news:        "News"
-      contact:     "Kontakt"
+      questions:   "Questions"
+      news:        "Nouveautes"
+      contact:     "Contact"
 #END:layout
  
 #START:cart
   carts:
     cart:
-      title:       "Ihr Warenkorb"
-      empty:       "Warenkorb leeren"
-      checkout:    "zur Kasse"
+      title:       "Votre panier"
+      empty:       "Effacer"
+      checkout:    "Commander"
 #END:cart
  
 #START:main
   store:
     index:
-      title_html:  "Ihr Babelfish42 Katalog"
-      add_html:    "Warenkorb"
+      title_html:  "Votre Babelfish42 cataloge"
+      add_html:    "Panier"
 #END:main
  
 #START:checkout
   orders:
     new:
-      legend:       "Bitte Rechnungs-/Versandanschrift ausfuellen"
+      legend:       "Completer l'adresse s'il vous plait"
     form:
-      name:         "Name"
+      name:         "Nom"
       address_html: "Adresse"
       email:        "E-mail"
-      pay_type:     "Zahlungsart"
-      pay_prompt_html: "Zahlungsart auswaehlen"
-      submit:       "Absenden"
+      pay_type:     "Mode de paiment"
+      pay_prompt_html: "Choisir mode de paiment"
+      submit:       "Envoyer"
 #END:checkout
  
 #START:flash
-  thanks:          "Vielen Dank fuer Ihre Bestellung"
+  thanks:          "Merci beaucoup pour votre commande"
 #END:flash

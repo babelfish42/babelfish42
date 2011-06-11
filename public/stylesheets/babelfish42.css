@@ -6,7 +6,7 @@
         border: 2px solid red;
         padding: 1em;
         margin-bottom: 2em;
-        background-color: #00CCFF; /*hintergrundfarbe bei benachrichtigungen*/
+        background-color: #81BEF7; /*hintergrundfarbe bei benachrichtigungen*/
         font: bold smaller sans-serif;
 }
  
@@ -71,7 +71,7 @@
  
  /* banner oben*/
 #banner {
-  background: #0099FF;
+  background: #81BEF7;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid;
@@ -86,7 +86,7 @@
 
 /*linke spalte*/ 
 #columns {
-  background: #0099FF;
+  background: #084B8A;
 }
  
 #main {
@@ -103,11 +103,11 @@
   padding-left: 1em;
   padding-bottom: 1em;
   width: 16em;
-  background: #00CCFF;
+  background: #084B8A;
 }
  
 #side a {
-  color: #000066;
+  color: #E0ECF8;
   font-size: small;
 }
 /* END:mainlayout */
