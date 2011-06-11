@@ -1,0 +1,35 @@
+<div id="color_list"> 
+<h1>Listing colors</h1>
+
+  <table> 
+  <% @colors.each do |color| %>
+    <tr class="<%= cycle('list_line_odd', 'list_line_even') %>"> 
+ 
+      <td> 
+        <%= image_tag(color.image_url, :class => 'list_image') %>
+      </td> 
+      
+      <td class="list_description"> 
+        <dl> 
+          <dt><%= color.title %></dt>  
+        </dl> 
+      </td> 
+ 
+      <td class="list_actions"> 
+        <%= link_to 'Show', color %><br/> 
+        <%= link_to 'Edit', edit_color_path(color) %><br/> 
+        <%= link_to 'Destroy', color, 
+                    :confirm => 'Are you sure?',
+                    :method => :delete %>
+      </td> 
+    </tr> 
+  <% end %>
+  </table> 
+</div> 
+
+<br /> 
+ 
+<%= link_to 'New Color', new_color_path %>
+
+
+

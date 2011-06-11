@@ -1,4 +1,6 @@
 Babelfish42::Application.routes.draw do
+  resources :colors
+
   get 'admin' => 'admin#index'
   controller :sessions do
     get  'login' => :new
@@ -6,6 +8,7 @@ Babelfish42::Application.routes.draw do
     delete 'logout' => :destroy
   end
   scope '(:locale)' do
+    resources :colors
     resources :users
     resources :orders
     resources :line_items
